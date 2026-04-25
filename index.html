@@ -7,8 +7,10 @@ body_class: homepage
 <section id="hero-banner">
     <div class="container">
         <div class="hero-content">
-            <h1 class="hero-title">BATTLE</h1>
-            <p class="hero-subtitle">Deep learning for enhanced phage therapy</p>
+            <p class="eyebrow">Team BATTLE</p>
+            <h1 class="hero-title">Faster phage matching for antibiotic-resistant infections</h1>
+            <p class="hero-subtitle">We combine machine learning and wet-lab validation to make phage therapy more targeted, practical, and scalable.</p>
+            <a class="btn-primary" href="{{ '/research/' | relative_url }}">Explore our research</a>
         </div>
     </div>
 </section>
@@ -16,24 +18,43 @@ body_class: homepage
 <section id="about">
     <div class="container">
         <header>
-            <h2>About Our Research</h2>
+            <h2>Why this work matters</h2>
         </header>
-        <div class="content">
-            <p>Our research group is primarily focused on revolutionizing phage therapy through advanced deep learning approaches. We develop sophisticated computational models to analyze and predict phage-host interactions, enabling the design of highly targeted phage cocktails against antibiotic-resistant bacteria. By integrating comprehensive datasets on bacterial defense systems, surface variations, and evolutionary dynamics, we aim to create predictive tools that will transform personalized antimicrobial treatments and address the global crisis of antibiotic resistance.</p>
+        <div class="content narrow">
+            <p>Antimicrobial resistance (AMR) is increasing globally, and many infections are becoming harder to treat with standard antibiotics alone. Phage therapy offers a promising alternative because phages can selectively target harmful bacteria.</p>
+            <p>The challenge is speed: matching the right phage to the right bacterial strain often requires extensive testing. Team BATTLE is developing computational tools to prioritize the best phage candidates sooner, then validate predictions through experiments.</p>
         </div>
-    </div>
-</section>
-
-<section id="infographic">
-    <div class="container">
-        <div class="infographic-wrapper">
-            <img src="{{ '/assets/images/infographic.png' | relative_url }}" alt="BATTLE Research Infographic" />
+        <div class="card-grid">
+            <article class="info-card">
+                <h3>Our focus</h3>
+                <p>Predict phage-host interactions more accurately and model treatment dynamics with clinically relevant outcomes.</p>
+            </article>
+            <article class="info-card">
+                <h3>Our approach</h3>
+                <p>Integrate machine learning, simulation, and iterative wet-lab feedback into one applied research pipeline.</p>
+            </article>
+            <article class="info-card">
+                <h3>Our goal</h3>
+                <p>Support more effective, personalized phage-based treatment strategies against resistant bacterial infections.</p>
+            </article>
         </div>
     </div>
 </section>
 
 <section id="cta">
     <div class="container">
-        <p>Learn more about our <a href="{{ '/research/' | relative_url }}">research</a> or meet the <a href="{{ '/team/' | relative_url }}">team</a>.</p>
+        <p>Want the full technical and biological context? Visit the <a href="{{ '/research/' | relative_url }}">Research page</a>.</p>
+    </div>
+</section>
+
+<section id="team-photo">
+    <div class="container">
+        <header>
+            <h2>Meet Team BATTLE</h2>
+        </header>
+        <figure class="feature-figure">
+            <img src="{{ '/assets/images/team_group.png' | relative_url }}" alt="Team BATTLE group photo on campus steps" />
+            <figcaption>Our interdisciplinary team combines computational modeling, microbiology, and translational research.</figcaption>
+        </figure>
     </div>
 </section>

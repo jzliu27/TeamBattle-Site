@@ -10,11 +10,53 @@ permalink: /research/
         <div id="content">
             <header>
                 <h2>Our Research</h2>
+                <p>An integrated computational and experimental approach to improve phage therapy design.</p>
             </header>
-            <div class="coming-soon">
-                <h3>Coming Soon</h3>
-                <p>Detailed information about our research projects, publications, and findings will be available here shortly. Stay tuned for updates on our work in deep learning for phage therapy.</p>
-            </div>
+
+            <section class="content-section">
+                <h3>Motivation: the AMR challenge</h3>
+                <p>Antimicrobial resistance is a growing global health threat. As antibiotics lose effectiveness, there is urgent need for therapies that can target resistant bacteria with greater precision. Bacteriophages are promising because they naturally infect bacteria and can be selected for narrow, intentional targeting.</p>
+                <p>However, clinical use is still constrained by a major bottleneck: quickly identifying phages that will effectively lyse a specific patient isolate. This matching process is often labor intensive and time sensitive.</p>
+            </section>
+
+            <section class="content-section">
+                <h3>What Team BATTLE is building</h3>
+                <div class="card-grid two-up">
+                    <article class="info-card">
+                        <h4>1) LLM-supported phage generation</h4>
+                        <p>Investigate whether genome-scale language modeling can help generate viable candidate phages with lytic characteristics.</p>
+                    </article>
+                    <article class="info-card">
+                        <h4>2) Phage-host scoring</h4>
+                        <p>Develop models that predict infectivity likelihood using genomic and protein-level features from both phage and host.</p>
+                    </article>
+                    <article class="info-card">
+                        <h4>3) Interaction simulation</h4>
+                        <p>Model infection dynamics over time to estimate treatment-relevant outcomes such as kill curves and resistance behavior.</p>
+                    </article>
+                    <article class="info-card">
+                        <h4>4) Closed-loop validation</h4>
+                        <p>Use plaque assays, titer measurements, and growth/lysis experiments to validate and continuously refine model predictions.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>Research goals</h3>
+                <ul class="styled-list">
+                    <li>Improve predictive accuracy for phage infectivity against <em>Staphylococcus aureus</em> strains.</li>
+                    <li>Move beyond genus-level matching toward more treatment-relevant quantitative predictions.</li>
+                    <li>Incorporate biological realism into model features, including resistance and defense-system considerations.</li>
+                    <li>Build a practical computational backbone that reduces expensive trial-and-error wet-lab screening.</li>
+                </ul>
+            </section>
+
+            <section id="infographic" class="content-section">
+                <h3>Research pipeline overview</h3>
+                <div class="infographic-wrapper">
+                    <img src="{{ '/assets/images/infographic.png' | relative_url }}" alt="BATTLE research infographic showing integrated computational and experimental workflow" />
+                </div>
+            </section>
         </div>
     </div>
 </section>

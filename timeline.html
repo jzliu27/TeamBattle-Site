@@ -1,20 +1,74 @@
 ---
 layout: default
-title: Timeline
+title: Progress
 body_class: no-sidebar
-permalink: /timeline/
+permalink: /progress/
 ---
 
 <section id="main">
     <div class="container">
         <div id="content">
             <header>
-                <h2>Project Timeline</h2>
+                <h2>Project Progress</h2>
+                <p>Key updates from our computational and experimental workstreams.</p>
             </header>
-            <div class="coming-soon">
-                <h3>Coming Soon</h3>
-                <p>Our project timeline will be available here shortly. Check back soon for updates on our research milestones and future goals.</p>
-            </div>
+
+            <section class="content-section">
+                <h3>Update: model fitting for phage lysis challenge data</h3>
+                <p>We fit a phage-host infection model to challenge data from <em>S. aureus</em> NRS382 with phage GRCS. In short, this compares predicted lysis dynamics against observed PFU/host trends to check whether our model is capturing real infection behavior.</p>
+                <div class="figure-grid two-up">
+                    <figure class="feature-figure">
+                        <img src="{{ '/assets/images/phage-lysis-plates.png' | relative_url }}" alt="Two plates from the phage lysis challenge experiment" />
+                        <figcaption>Phage lysis challenge plates (experimental result image).</figcaption>
+                    </figure>
+                    <figure class="feature-figure">
+                        <img src="{{ '/assets/images/fitted-models-summary.png' | relative_url }}" alt="Fitted phage lysis curve compared with challenge data" />
+                        <figcaption>Fitted curve output for the same challenge dataset.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>Experimental updates</h3>
+                <ul class="styled-list">
+                    <li>Completed growth-curve workflow for <em>S. aureus</em> JE2 with OD600 and CFU sampling.</li>
+                    <li>Ran phage lysis challenge with NRS382 and GRCS, including control comparison and titer measurements.</li>
+                    <li>Continued protocol development for titering, propagation, and serial dilution workflows.</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h3>Computational updates</h3>
+                <ul class="styled-list">
+                    <li>Joined and began onboarding on HPC resources for larger-scale modeling and parameter sweeps.</li>
+                    <li>Reproduced challenge systems inspired by latent-period inference work and one-step growth curve dynamics.</li>
+                    <li>Implemented ODE-based simulations across multiple phage-host systems to compare expected versus observed trajectories.</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h3>Field collaboration update: Central Maryland Research &amp; Education Center</h3>
+                <p>Our team visited the Central Maryland Research &amp; Education Center with Brian S. Spielman (Assistant Director) to discuss how high somatic cell count dairy samples can support bacteriophage-focused infectious disease research. We observed the milking workflow and discussed sample collection logistics for downstream lab analysis.</p>
+                <div class="figure-grid two-up">
+                    <figure class="feature-figure">
+                        <img src="{{ '/assets/images/farm-visit-group.png' | relative_url }}" alt="Team members during visit to Central Maryland Research and Education Center" />
+                        <figcaption>Research collaboration visit at the dairy facility.</figcaption>
+                    </figure>
+                    <figure class="feature-figure">
+                        <img src="{{ '/assets/images/farm-visit-cow.png' | relative_url }}" alt="Dairy sample context image from collaboration visit" />
+                        <figcaption>Field context for sample logistics supporting project expansion.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>Near-term next steps</h3>
+                <ul class="styled-list">
+                    <li>Expand host-strain panel for EoP comparisons and improved generalization checks.</li>
+                    <li>Strengthen calibration linking OD600 and CFU measurements for more stable joint fitting.</li>
+                    <li>Continue integrating experimental feedback to refine the scoring and simulation pipeline.</li>
+                </ul>
+            </section>
         </div>
     </div>
 </section>

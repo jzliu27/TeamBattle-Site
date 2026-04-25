@@ -11,9 +11,21 @@
   title: "Computational Group Mentor"
   photo: "weitz.png"
 
-- name: "Celina McDonald"
+- name: "Dr. Julie Pourtois"
   type: staff
   order: 3
+  title: "Computational Group Mentor"
+  photo: "julie-pourtois.png"
+
+- name: "Sumana Bhowmick"
+  type: staff
+  order: 4
+  title: "Experimental Group Mentor"
+  photo: "sumana-bhowmick.png"
+
+- name: "Celina McDonald"
+  type: staff
+  order: 5
   title: "Team Librarian"
   photo: "celina.png"
 
