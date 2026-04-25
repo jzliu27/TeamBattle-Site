@@ -1,60 +1,94 @@
----
-layout: default
-title: Home
-body_class: homepage
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Home - BATTLE</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="homepage">
+    <div id="page-wrapper">
+        <section id="header">
+            <div class="container">
+                <h1 id="logo"><a href="index.html">BATTLE</a></h1>
+                <p>Deep learning for enhanced phage therapy</p>
+                <nav id="nav">
+                    <ul>
+                        <li><a class="active" href="index.html"><span>Home</span></a></li>
+                        <li><a href="research.html"><span>Research</span></a></li>
+                        <li><a href="timeline.html"><span>Progress</span></a></li>
+                        <li><a href="team.html"><span>Team</span></a></li>
+                        <li><a href="contact.html"><span>Contact</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
 
-<section id="hero-banner">
-    <div class="container">
-        <div class="hero-content">
-            <p class="eyebrow">Team BATTLE</p>
-            <h1 class="hero-title">Faster phage matching for antibiotic-resistant infections</h1>
-            <p class="hero-subtitle">We combine machine learning and wet-lab validation to make phage therapy more targeted, practical, and scalable.</p>
-            <a class="btn-primary" href="{{ '/research/' | relative_url }}">Explore our research</a>
-        </div>
-    </div>
-</section>
+        <section id="hero-banner">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="eyebrow">Team BATTLE</p>
+                    <h1 class="hero-title">Faster phage matching for antibiotic-resistant infections</h1>
+                    <p class="hero-subtitle">We combine machine learning and wet-lab validation to make phage therapy more targeted, practical, and scalable.</p>
+                    <a class="btn-primary" href="research.html">Explore our research</a>
+                </div>
+            </div>
+        </section>
 
-<section id="about">
-    <div class="container">
-        <header>
-            <h2>Why this work matters</h2>
-        </header>
-        <div class="content narrow">
-            <p>Antimicrobial resistance (AMR) is increasing globally, and many infections are becoming harder to treat with standard antibiotics alone. Phage therapy offers a promising alternative because phages can selectively target harmful bacteria.</p>
-            <p>The challenge is speed: matching the right phage to the right bacterial strain often requires extensive testing. Team BATTLE is developing computational tools to prioritize the best phage candidates sooner, then validate predictions through experiments.</p>
-        </div>
-        <div class="card-grid">
-            <article class="info-card">
-                <h3>Our focus</h3>
-                <p>Predict phage-host interactions more accurately and model treatment dynamics with clinically relevant outcomes.</p>
-            </article>
-            <article class="info-card">
-                <h3>Our approach</h3>
-                <p>Integrate machine learning, simulation, and iterative wet-lab feedback into one applied research pipeline.</p>
-            </article>
-            <article class="info-card">
-                <h3>Our goal</h3>
-                <p>Support more effective, personalized phage-based treatment strategies against resistant bacterial infections.</p>
-            </article>
-        </div>
-    </div>
-</section>
+        <section id="about">
+            <div class="container">
+                <header>
+                    <h2>Why this work matters</h2>
+                </header>
+                <div class="content narrow">
+                    <p>Antimicrobial resistance (AMR) is increasing globally, and many infections are becoming harder to treat with standard antibiotics alone. Phage therapy offers a promising alternative because phages can selectively target harmful bacteria.</p>
+                    <p>The challenge is speed: matching the right phage to the right bacterial strain often requires extensive testing. Team BATTLE is developing computational tools to prioritize the best phage candidates sooner, then validate predictions through experiments.</p>
+                </div>
+                <div class="card-grid">
+                    <article class="info-card">
+                        <h3>Our focus</h3>
+                        <p>Predict phage-host interactions more accurately and model treatment dynamics with clinically relevant outcomes.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Our approach</h3>
+                        <p>Integrate machine learning, simulation, and iterative wet-lab feedback into one applied research pipeline.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Our goal</h3>
+                        <p>Support more effective, personalized phage-based treatment strategies against resistant bacterial infections.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<section id="cta">
-    <div class="container">
-        <p>Want the full technical and biological context? Visit the <a href="{{ '/research/' | relative_url }}">Research page</a>.</p>
-    </div>
-</section>
+        <section id="cta">
+            <div class="container">
+                <p>Want the full technical and biological context? Visit the <a href="research.html">Research page</a>.</p>
+            </div>
+        </section>
 
-<section id="team-photo">
-    <div class="container">
-        <header>
-            <h2>Meet Team BATTLE</h2>
-        </header>
-        <figure class="feature-figure">
-            <img src="{{ '/assets/images/team_group.png' | relative_url }}" alt="Team BATTLE group photo on campus steps" />
-            <figcaption>Our interdisciplinary team combines computational modeling, microbiology, and translational research.</figcaption>
-        </figure>
+        <section id="team-photo">
+            <div class="container">
+                <header>
+                    <h2>Meet Team BATTLE</h2>
+                </header>
+                <figure class="feature-figure">
+                    <img src="assets/images/team_group.png" alt="Team BATTLE group photo on campus steps" />
+                    <figcaption>Our interdisciplinary team combines computational modeling, microbiology, and translational research.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="container">
+                <div id="copyright" class="container">
+                    <ul class="links">
+                        <li>&copy; 2026 BATTLE Research Group. All rights reserved.</li>
+                        <li>Email: <a href="mailto:teambattle.gems@gmail.com">teambattle.gems@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
+</body>
+</html>

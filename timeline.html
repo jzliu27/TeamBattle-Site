@@ -1,74 +1,107 @@
----
-layout: default
-title: Progress
-body_class: no-sidebar
-permalink: /timeline/
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Progress - BATTLE</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="no-sidebar">
+    <div id="page-wrapper">
+        <section id="header">
+            <div class="container">
+                <h1 id="logo"><a href="index.html">BATTLE</a></h1>
+                <p>Deep learning for enhanced phage therapy</p>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="research.html"><span>Research</span></a></li>
+                        <li><a class="active" href="timeline.html"><span>Progress</span></a></li>
+                        <li><a href="team.html"><span>Team</span></a></li>
+                        <li><a href="contact.html"><span>Contact</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
 
-<section id="main">
-    <div class="container">
-        <div id="content">
-            <header>
-                <h2>Project Progress</h2>
-                <p>Key updates from our computational and experimental workstreams.</p>
-            </header>
+        <section id="main">
+            <div class="container">
+                <div id="content">
+                    <header>
+                        <h2>Project Progress</h2>
+                        <p>Key updates from our computational and experimental workstreams.</p>
+                    </header>
 
-            <section class="content-section">
-                <h3>Update: model fitting for phage lysis challenge data</h3>
-                <p>We fit a phage-host infection model to challenge data from <em>S. aureus</em> NRS382 with phage GRCS. In short, this compares predicted lysis dynamics against observed PFU/host trends to check whether our model is capturing real infection behavior.</p>
-                <div class="figure-grid two-up">
-                    <figure class="feature-figure">
-                        <img src="{{ '/assets/images/phage-lysis-plates.png' | relative_url }}" alt="Two plates from the phage lysis challenge experiment" />
-                        <figcaption>Phage lysis challenge plates (experimental result image).</figcaption>
-                    </figure>
-                    <figure class="feature-figure">
-                        <img src="{{ '/assets/images/fitted-models-summary.png' | relative_url }}" alt="Fitted phage lysis curve compared with challenge data" />
-                        <figcaption>Fitted curve output for the same challenge dataset.</figcaption>
-                    </figure>
+                    <section class="content-section">
+                        <h3>Update: model fitting for phage lysis challenge data</h3>
+                        <p>We fit a phage-host infection model to challenge data from <em>S. aureus</em> NRS382 with phage GRCS. In short, this compares predicted lysis dynamics against observed PFU and host trends to evaluate whether our model captures real infection behavior.</p>
+                        <div class="figure-grid two-up">
+                            <figure class="feature-figure">
+                                <img src="assets/images/phage-lysis-plates.png" alt="Two plates from the phage lysis challenge experiment" />
+                                <figcaption>Phage lysis challenge plates (experimental result image).</figcaption>
+                            </figure>
+                            <figure class="feature-figure">
+                                <img src="assets/images/fitted-models-summary.png" alt="Fitted phage lysis curve compared with challenge data" />
+                                <figcaption>Fitted curve output for the same challenge dataset.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="content-section">
+                        <h3>Experimental updates</h3>
+                        <ul class="styled-list">
+                            <li>Completed growth-curve workflow for <em>S. aureus</em> JE2 with OD600 and CFU sampling.</li>
+                            <li>Ran phage lysis challenge with NRS382 and GRCS, including control comparison and titer measurements.</li>
+                            <li>Continued protocol development for titering, propagation, and serial dilution workflows.</li>
+                        </ul>
+                    </section>
+
+                    <section class="content-section">
+                        <h3>Computational updates</h3>
+                        <ul class="styled-list">
+                            <li>Joined and began onboarding on HPC resources for larger-scale modeling and parameter sweeps.</li>
+                            <li>Reproduced challenge systems inspired by latent-period inference work and one-step growth curve dynamics.</li>
+                            <li>Implemented ODE-based simulations across multiple phage-host systems to compare expected versus observed trajectories.</li>
+                        </ul>
+                    </section>
+
+                    <section class="content-section">
+                        <h3>Field collaboration update: Central Maryland Research &amp; Education Center</h3>
+                        <p>Our team visited the Central Maryland Research &amp; Education Center with Brian S. Spielman (Assistant Director) to discuss how high somatic cell count dairy samples can support bacteriophage-focused infectious disease research. We observed the milking workflow and discussed sample collection logistics for downstream lab analysis.</p>
+                        <div class="figure-grid two-up">
+                            <figure class="feature-figure">
+                                <img src="assets/images/farm-visit-group.png" alt="Team members during visit to Central Maryland Research and Education Center" />
+                                <figcaption>Research collaboration visit at the dairy facility.</figcaption>
+                            </figure>
+                            <figure class="feature-figure">
+                                <img src="assets/images/farm-visit-cow.png" alt="Dairy sample context image from collaboration visit" />
+                                <figcaption>Field context for sample logistics supporting project expansion.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="content-section">
+                        <h3>Near-term next steps</h3>
+                        <ul class="styled-list">
+                            <li>Expand host-strain panel for EoP comparisons and improved generalization checks.</li>
+                            <li>Strengthen calibration linking OD600 and CFU measurements for more stable joint fitting.</li>
+                            <li>Continue integrating experimental feedback to refine the scoring and simulation pipeline.</li>
+                        </ul>
+                    </section>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="content-section">
-                <h3>Experimental updates</h3>
-                <ul class="styled-list">
-                    <li>Completed growth-curve workflow for <em>S. aureus</em> JE2 with OD600 and CFU sampling.</li>
-                    <li>Ran phage lysis challenge with NRS382 and GRCS, including control comparison and titer measurements.</li>
-                    <li>Continued protocol development for titering, propagation, and serial dilution workflows.</li>
-                </ul>
-            </section>
-
-            <section class="content-section">
-                <h3>Computational updates</h3>
-                <ul class="styled-list">
-                    <li>Joined and began onboarding on HPC resources for larger-scale modeling and parameter sweeps.</li>
-                    <li>Reproduced challenge systems inspired by latent-period inference work and one-step growth curve dynamics.</li>
-                    <li>Implemented ODE-based simulations across multiple phage-host systems to compare expected versus observed trajectories.</li>
-                </ul>
-            </section>
-
-            <section class="content-section">
-                <h3>Field collaboration update: Central Maryland Research &amp; Education Center</h3>
-                <p>Our team visited the Central Maryland Research &amp; Education Center with Brian S. Spielman (Assistant Director) to discuss how high somatic cell count dairy samples can support bacteriophage-focused infectious disease research. We observed the milking workflow and discussed sample collection logistics for downstream lab analysis.</p>
-                <div class="figure-grid two-up">
-                    <figure class="feature-figure">
-                        <img src="{{ '/assets/images/farm-visit-group.png' | relative_url }}" alt="Team members during visit to Central Maryland Research and Education Center" />
-                        <figcaption>Research collaboration visit at the dairy facility.</figcaption>
-                    </figure>
-                    <figure class="feature-figure">
-                        <img src="{{ '/assets/images/farm-visit-cow.png' | relative_url }}" alt="Dairy sample context image from collaboration visit" />
-                        <figcaption>Field context for sample logistics supporting project expansion.</figcaption>
-                    </figure>
+        <section id="footer">
+            <div class="container">
+                <div id="copyright" class="container">
+                    <ul class="links">
+                        <li>&copy; 2026 BATTLE Research Group. All rights reserved.</li>
+                        <li>Email: <a href="mailto:teambattle.gems@gmail.com">teambattle.gems@gmail.com</a></li>
+                    </ul>
                 </div>
-            </section>
-
-            <section class="content-section">
-                <h3>Near-term next steps</h3>
-                <ul class="styled-list">
-                    <li>Expand host-strain panel for EoP comparisons and improved generalization checks.</li>
-                    <li>Strengthen calibration linking OD600 and CFU measurements for more stable joint fitting.</li>
-                    <li>Continue integrating experimental feedback to refine the scoring and simulation pipeline.</li>
-                </ul>
-            </section>
-        </div>
+            </div>
+        </section>
     </div>
-</section>
+</body>
+</html>
