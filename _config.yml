@@ -1,11 +1,10 @@
 # Site settings
 title: BATTLE
 description: Deep learning for enhanced phage therapy
-# Use blank baseurl and local server when testing locally
-# baseurl: "" 
-# url: "http://localhost:4000"
-baseurl: "/TeamBattle-Site"
-url: "https://phagebattle.com/"
+# Use blank baseurl for custom-domain deployment (phagebattle.com).
+# If deploying under github.io/TeamBattle-Site instead, set baseurl to "/TeamBattle-Site".
+baseurl: ""
+url: "https://phagebattle.com"
 
 email: teambattle.gems@gmail.com
 
