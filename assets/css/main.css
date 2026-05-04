@@ -122,7 +122,7 @@ a:hover {
     color: #ffffff;
     padding: 4.5rem 0;
     text-align: center;
-    background: linear-gradient(140deg, rgba(8, 73, 123, 0.92), rgba(10, 98, 168, 0.92)),
+    background: linear-gradient(140deg, rgba(8, 73, 123, 0.72), rgba(10, 98, 168, 0.7)),
                 url("../images/phage.png") center center / cover no-repeat;
 }
 
@@ -332,19 +332,27 @@ a:hover {
 
 .member-photo img {
     width: min(100%, 280px);
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 4;
     border-radius: 12px;
     object-fit: cover;
+    object-position: center top;
     border: 2px solid var(--border);
 }
 
 .staff-grid .member-photo img {
     width: min(100%, 340px);
+    aspect-ratio: 2 / 3;
 }
 
 .member-title {
     color: var(--primary);
     font-weight: 700;
+}
+
+.member-major {
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    color: var(--text-soft);
 }
 
 .contact-info {
