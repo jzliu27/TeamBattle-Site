@@ -331,17 +331,21 @@ a:hover {
 }
 
 .member-photo img {
-    width: min(100%, 280px);
-    aspect-ratio: 3 / 4;
+    width: 100%;
+    max-width: 280px;
+    height: 360px;
     border-radius: 12px;
+    display: block;
+    margin: 0 auto;
     object-fit: cover;
     object-position: center top;
     border: 2px solid var(--border);
 }
 
 .staff-grid .member-photo img {
-    width: min(100%, 340px);
-    aspect-ratio: 2 / 3;
+    max-width: 340px;
+    height: 460px;
+    object-position: center 15%;
 }
 
 .member-title {
@@ -355,7 +359,7 @@ a:hover {
     color: var(--text-soft);
 }
 
-.contact-info {
+    .contact-info {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
